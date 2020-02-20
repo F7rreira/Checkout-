@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="CSS/css.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+
+
+        <nav class="navbar navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">
+                <img src="IMG/logo.png.png" width="100" height="100" alt="">
+
+            </a>
+            <a class="btn btn-warning" href="#">continuar comprando
+            </a>
+        </nav>
+
+    </header>
+
+
+    <main class="container">
+        <form id="checkout" class="row mt-4">
+            <div class="col-md-4 ">
+                <header class="bg-warning text-light p-2">
+                    <img src="IMG/avatar.png" width="40" height="40">
+                    Dados pessoais
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomeUsuario">Nome completo: *</label>
+                        <input class="form-control" type="text" id="nomeUsuario" name="nomeUsuario"
+                            placeholder="Digite o nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfUsuario">CPF: *</label>
+                        <input class="form-control" type="tel" id="cpfUsuario" name="cpfUsuario" placeholder="CPF"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telUsuario">Telefone:*</label>
+                        <input class="form-control" type="tel" id="nomeUsuario" name="telUsuario"
+                            placeholder="DD-XXXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailUsuario">Email: *</label>
+                        <input class="form-control" type="email" id="emailUsuario" name="emailUsuario"
+                            placeholder="abc@gsd.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senhaUsuario">Senha: *</label>
+                        <input class="form-control" type="password" id="senhaUsuario" name="senhaUsuario"
+                            placeholder="digite a sua senha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmaUsuario"> Confirma senha: *</label>
+                        <input class="form-control" type="password" id="confirmaUsuario" name="senhaUsuario"
+                            placeholder=" confirme a senha" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="bg-warning text-light p-2">
+                    <img src="IMG/entrega.png" width="40" height="40">
+                    Entrega
+                </header>
+                <div>
+                    <div class="form-group">
+                        <label for="cepUsuario">CEP: *</label>
+                        <input class="form-control" type="tel" id="cepUsuario" name="cepUsuario"
+                            placeholder="Digite seu CEP" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endUsuario">Endereço: *</label>
+                        <input class="form-control" type="text" id="endUsuario" name="endUsuario"
+                            placeholder="Digite seu Endereço" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cepUsuario">nº: *</label>
+                        <input class="form-control" type="tel" id="cepUsuario" name="numUsuario"
+                            placeholder="Numero da residencia" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cepUsuario">Complemento: *</label>
+                        <input class="form-control" type="text" id="compUsuario" name="compUsuario"
+                            placeholder="ex: casa 4" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bairroUsuario">Bairro: *</label>
+                        <input class="form-control" type="text" id="bairroUsuario" name="bairroUsuario"
+                            placeholder="Digite seu bairro" required>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="cidadeUsuarioCity">Cidade</label>
+                                <input type="text" class="form-control" id="cidadeUsuario"
+                                    placeholder="digite sua cidade">
+                            </div>
+
+                        </div>
+
+                        <div class="col-6">
+                            <label for="estadoUsuarioCity">Estado:*</label>
+                            <select class="form-control">
+                                <option value="" disabled selected>
+                                    Estado
+                                </option>
+                                <option value="SP">SP</option>
+                                <option value="SP">RJ</option>
+                                <option value="SP">ES</option>
+                                <option value="SP">BA</option>
+                                <option value="SP">SP</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="freteRapido"> Frete rapido <br> R$50</label>
+                            <input type="radio" name="frete" id="freteRapido">
+                        </div>
+                        <div class="col-6">
+                            <label for="freteRapido"> Frete normal <br> R$20</label>
+                            <input type="radio" name="frete" id="freteRapido">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <header class="bg-warning text-light p-2">
+                    <img src="IMG/pagamento.png" width="40" height="40">
+                    Pagamentos
+                </header>
+                <div class="p-2">
+                    <div class="d-flex justify-content-center flex-column ">
+                        <h4> Camiseta Branca G</h4>
+
+                        <p> R$20,00</p>
+
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label for="cartaoUsuario">Numero do cartão: *</label>
+                            <input class="form-control" type="tel" id="cartaoUsuario" name="cartaoUsuario"
+                                placeholder="Digite o numero do cartão" required>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-6">
+
+                                <label for="validadeUsuario">Validade cartão</label>
+                                <input type="text" class="form-control" id="validadeUsuario"
+                                    placeholder="Validade do cartão">
+
+
+                            </div>
+
+                            <div class="form-group col-6">
+
+                                <label for="ccvUsuario">Codigo de segurança</label>
+                                <input type="number" class="form-control" id="ccvUsuario" placeholder="digite o CVV">
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="titularUsuario">Nome do Titular: *</label>
+                            <input class="form-control" type="text" id="titularUsuario" name="titularUsuario"
+                                placeholder="Nome do titular" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cartaoUsuario">CPF Do Titular: *</label>
+                            <input class="form-control" type="tel" id="cpftitularUsuario" name="cpftitularUsuario"
+                                placeholder="Digite o cpf do titular" required>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn- sucess" type="submit"> finalizar comprar</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
